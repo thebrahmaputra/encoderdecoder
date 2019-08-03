@@ -1,0 +1,21 @@
+<assembly>
+    <id>api</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>src/main</directory>
+            <outputDirectory>doc</outputDirectory>
+            <includes>
+                <include>*.*</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>/target/${artifactId}.${packaging}</source>
+            <destName>encoder-decoder-api.jar</destName>
+        </file>
+    </files>
+</assembly>
